@@ -1,4 +1,7 @@
-from PIL import Image
+import cv2
+ 
+img = cv2.imread('Ex1/dog.jpeg')
 
-imagem = Image.open('dog.jpeg')
-imagem.show()
+cv2.imshow('image',img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
